@@ -40,4 +40,4 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.token }}
         with:
-          title: ${{ steps.versioning.determinetag.tag }}
+          title: ${{ steps.determinetag.outputs.tag }}
